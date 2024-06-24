@@ -47,9 +47,8 @@ const HeroSection = ({titleShown = true}) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <div className={classNames("bg-gray-800 text-white text-center", {
-                "py-20": !!titleShown,
-                "py-4": !titleShown
+            <div className={classNames(" text-white text-center", {
+                "py-20": !!titleShown
             })}>
                 {titleShown && <h1 className="text-4xl font-bold pb-10">Yardıma mı ihtiyacınız var?</h1>}
                 <div className="max-w-md mx-auto">
