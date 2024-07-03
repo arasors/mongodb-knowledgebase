@@ -135,7 +135,7 @@ const Navbar = () => {
                     {/*</a>}*/}
                 </div>
             </div>
-            <HeroSection titleShown={pathname==="/"} />
+            {!pathname?.startsWith("/m") && <HeroSection titleShown={pathname === "/"}/>}
         </nav>
     );
 };
